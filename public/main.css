@@ -1,0 +1,38 @@
+body,html{
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;	
+	font-family: Arial;
+}
+
+html
+{
+	background-image: url('./imgs/background.png');	
+	background-repeat: repeat-x;
+	background-color: rgb(14,66,168);
+}
+
+h1,h2,h3,h4
+{
+	color: rgb(38,111,215);
+	text-shadow: black 0px 0px 5px;
+}
+
+.content
+{
+	width: 70%;	
+	margin-left: 15%;
+	margin-right: 15%;
+	font-weight: bolder;
+}
+
+.centered
+{
+	margin-left:auto;
+	margin-right: auto;	
+}
+
+.margin50top
+{
+	margin-top: 50px;	
+}
