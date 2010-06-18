@@ -1,0 +1,23 @@
+%html
+	%head
+		%title Welcome to the NoRM Project.
+		%link{:href=>'./main.css', :rel=>'stylesheet',:type=>'text/css'}
+	%body
+		.content.margin50top
+			.margin50top
+				%center
+					%a{:href=>'/'}
+						%img{:src=>'./imgs/normLogo.png'}
+					%h1 This is not the page you're looking for.
+					%h4 (Move along, move along.)
+			%script{:type=>'text/javascript'}
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-17007244-1']);
+				_gaq.push(['_trackPageview']);
+				(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+				})();
