@@ -6,24 +6,31 @@ set :haml, {:format => :html5 }
 get '/' do
 	haml :index
 end
-get '/documentation'
+
+get '/documentation' do
 	haml :documentation
 end
-get '/samples'
+
+get '/samples' do
 	haml :samples
 end
-get '/discuss'
+
+get '/discuss' do
 	haml :discuss
 end
-get '/quickstart'
+
+get '/quickstart' do
 	haml :quickstart
 end
-get '/contribute'
+
+get '/contribute' do
 	haml :contribute
 end
-get '/contributors'
+
+get '/contributors' do
 	haml :contributoes
 end
+
 get '*' do
 	haml :status404
 end
