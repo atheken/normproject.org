@@ -1,1 +1,8 @@
-Links to GitHub for now.
+.content
+	- for c in @contribs
+		%li.contributor
+			- if c.gravatar_id != nil
+				%img{:src=>'http://www.gravatar.com/avatar/'+c.gravatar_id+'?s=50'}
+			.name=c.name
+			- if c.website != nil
+				%a{:href=>c.website}=c.website

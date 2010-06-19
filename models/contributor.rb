@@ -8,8 +8,15 @@ class Contributor
 		
 		for y in tree["contributors"].children
 			c = Contributor.new
+			
 			if y[:name] != nil
 				c.name = y[:name].value
+			else 
+				if y[:login] != nil
+					c.name = y[:login].value
+				else
+					c.name = "Anonymous Benefactor"
+				end
 			end
 			if y[:gravatar_id] != nil
 				c.gravatar_id = y[:gravatar_id].value 
@@ -18,10 +25,14 @@ class Contributor
 				c.website =  y[:blog].value 
 			end
 			if y[:contributions] != nil
-				c.commits =  y[:contributions].value 
+				c.commits = y[:contributions].value.to_i
+			else
+				c.commits = 1
 			end
+			
 			retval.push(c)
 		end
+		retval = retval.sort{|r,l|l.commits <=> r.commits}
 		return retval
 	end
 	

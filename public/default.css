@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: Norm
 Theme URI: http://norm.com/
 Description: Norm
@@ -262,4 +262,34 @@ ul li
 	width: 85px;
 	margin-right: 161px;
 	margin-left: 12px;
+}
+
+/*more more more.*/
+
+li.contributor
+{	
+	list-style: none;
+	border: 1px solid rgb(78,152,233);
+	width: 45%;
+	margin: 5px;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+li.contributor *
+{
+	clear: none;
+}
+
+li.contributor img
+{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+li.contributor .name
+{
+	font-size: 2em;
+	font-weight: bolder;
+	color: rgb(23,38,49);
 }

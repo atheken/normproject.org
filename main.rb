@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'models/contributor.rb'
+
 set :haml, {:format => :html5 }
 
 get '/' do
@@ -24,11 +26,8 @@ get '/quickstart' do
 end
 
 get '/contribute' do
+	@contribs = Contributor.all
 	haml :contribute
-end
-
-get '/contributors' do
-	haml :contributoes
 end
 
 get '*' do
