@@ -186,11 +186,11 @@ ul li
 #maincontent textarea
 {
 	color: #e5df3d;
-	font: normal 14px Courier, Arial, Sans-Serif;
-	padding: 17px 25px;
-	line-height: 33px;
-	margin-top: 20px;
-	margin-left: 6px;
+	font: normal 12px Courier, Arial, Sans-Serif;
+	padding: 5px 5px;
+	line-height: 14px;
+	margin-top: 10px;
+	margin-left: px;
 	width: 406px;
 	height: 239px;
 	border-top: none;

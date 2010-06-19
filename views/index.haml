@@ -1,34 +1,55 @@
 %h2
-  Three steps to building highly flexible and scalable applications with C# and MongoDB
+	Three steps to building highly flexible and scalable applications with C# and MongoDB
 .row
-  .numbers.span-8
-    %img{ :src => "images/one.png", :height => "125px", :alt => "1", :width => "139px" }
-  .span-7
-    %h1
-      Get Mongo
-  .dbutton.span-9.last
-    %a{ :href => "http://www.mongodb.org/display/DOCS/Downloads" }
-      Download it now
+	.numbers.span-8
+		%img{ :src => "images/one.png", :height => "125px", :alt => "1", :width => "139px" }
+	.span-7
+		%h1
+			Get Mongo
+	.dbutton.span-9.last
+		%a{ :href => "http://www.mongodb.org/display/DOCS/Downloads" }
+			Download it now
 .row
-  .numbers.span-8
-    %img{ :src => "images/two.png", :height => "125px", :alt => "2", :width => "139px" }
-  .getnorm.span-7
-    %h1
-      Get
-    %img{ :src => "images/smallnormlogo.png", :height => "30px", :alt => "NoRM", :width => "105px" }
-  .dbutton.span-9.last
-    %a{ :href => "http://github.com/atheken/NoRM/downloads" }
-      Download it now
+	.numbers.span-8
+		%img{ :src => "images/two.png", :height => "125px", :alt => "2", :width => "139px" }
+	.getnorm.span-7
+		%h1
+			Get
+		%img{ :src => "images/smallnormlogo.png", :height => "30px", :alt => "NoRM", :width => "105px" }
+	.dbutton.span-9.last
+		%a{ :href => "http://github.com/atheken/NoRM/downloads" }
+			Download it now
 .largerow
-  .numbers.span-8
-    %img{ :src => "images/three.png", :height => "125px", :alt => "3", :width => "139px" }
-  .span-7.last
-    %h1
-      Party Time!
-  .span-15.last
-    %textarea{ :rows => "9", :cols => "12" }
-      using...
-  .copybutton.span-20.last
-    %a{ :href => "#" }
-      Copy to Clipboard
-  
+	.numbers.span-8
+		%img{ :src => "images/three.png", :height => "125px", :alt => "3", :width => "139px" }
+	.span-7.last
+		%a{:name=>"copysnippet"}
+		%h1
+			Party Time!
+	.span-15.last
+		%textarea{ :rows => "9", :cols => "12" }
+			:preserve
+				using(var db = Mongo.Create("mongodb://localhost/BlogDB"))
+				{
+				  //create a db & collection
+				  //oh, right, nothing to do here.
+				
+				  //get LINQ access to your Posts
+				  var posts = db.GetCollection<Post>().AsQueryable();
+				
+				  //insert into collection
+				  posts.Insert(new Post{ID = 1, 
+				  Title="Hello NoRM",
+				  Body="Reasons for loving MongoDB:…"});
+				
+				  //find a post by id
+				  var p1 = posts.FirstOrDefault(p=>p.ID == 1);
+				
+				  //update the post.
+				  p1.Title= "NoRM, a perfect complement to MongoDB!";
+				  posts.Save(p1);
+				}
+	.copybutton.span-20.last
+		%a{ :href => "#copysnippet" }
+			Copy to Clipboard
+	
