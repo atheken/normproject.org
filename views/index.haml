@@ -1,24 +1,34 @@
-%html
-	%head
-		%title Welcome to the NoRM Project.
-		%link{:href=>'./main.css', :rel=>'stylesheet',:type=>'text/css'}
-	%body
-		%a{:href=>'http://github.com/atheken/norm'}
-			%img{:class=>'github-ribbon',:src=>'http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png', :alt=>'Fork me on GitHub'}
-		.content.margin50top
-			&nbsp;
-			.margin50top
-				%center
-					%img{:src=>'./imgs/normLogo.png'}
-					%h1 Soon. Very Soon.
-		%script{:type=>'text/javascript'}
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-17007244-1']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-			})();
+%h2
+  Three steps to building highly flexible and scalable applications with C# and MongoDB
+.row
+  .numbers.span-8
+    %img{ :src => "images/one.png", :height => "125px", :alt => "1", :width => "139px" }
+  .span-7
+    %h1
+      Get Mongo
+  .dbutton.span-9.last
+    %a{ :href => "http://www.mongodb.org/display/DOCS/Downloads" }
+      Download it now
+.row
+  .numbers.span-8
+    %img{ :src => "images/two.png", :height => "125px", :alt => "2", :width => "139px" }
+  .getnorm.span-7
+    %h1
+      Get
+    %img{ :src => "images/smallnormlogo.png", :height => "30px", :alt => "NoRM", :width => "105px" }
+  .dbutton.span-9.last
+    %a{ :href => "http://github.com/atheken/NoRM/downloads" }
+      Download it now
+.largerow
+  .numbers.span-8
+    %img{ :src => "images/three.png", :height => "125px", :alt => "3", :width => "139px" }
+  .span-7.last
+    %h1
+      Party Time!
+  .span-15.last
+    %textarea{ :rows => "9", :cols => "12" }
+      using...
+  .copybutton.span-20.last
+    %a{ :href => "#" }
+      Copy to Clipboard
+  

@@ -1,0 +1,265 @@
+﻿/*
+Theme Name: Norm
+Theme URI: http://norm.com/
+Description: Norm
+Version: 1.0
+Author: Mary Davis
+*/
+
+html
+{
+    height: 100%;
+}
+
+html body 
+{
+	min-width: 1018px;
+	font: normal 12px 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	color: #FFF;
+	background-color: #0e42a8;
+}
+
+#topborder
+{
+	background-color: #173441;
+	border-bottom: solid 1px #5ac3ff;
+	height: 11px;
+}
+
+#spotlight
+{
+	width: 1018px;
+	min-height: 513px;
+	margin: auto;
+	background: url(images/backgroundspotlight.gif) no-repeat;
+}
+
+/***********************************
+****Header
+***********************************/
+
+#header
+{
+	text-align: center;
+	margin-top: 78px;
+}
+
+#header ul
+{
+	margin: 36px 1.5em 27px 8px;
+}
+
+ul li
+{
+	display: inline;
+}
+
+#header li
+{
+	margin: 10px 30px 10px 0px;
+}
+
+#header li a
+{
+	color: #FFF;
+	text-decoration: none;
+	padding: 2px 9px 3px 9px;
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+}
+
+#header li a:hover
+{
+	color: #FFF;
+	background: url(images/navbuttonhover.png) repeat-x;
+	border-bottom: solid 1px #0a4187;
+    -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0px -1px 0px #84cefb; 
+	-webkit-box-shadow: 0px -1px 0px #84cefb;
+}
+
+.github-ribbon
+{
+	position: absolute;
+	top: 0; 
+	right: 0; 
+	border: 0;	
+}
+
+/***********************************
+****Main
+***********************************/
+
+#maincontent
+{
+	background: url(images/headerdivider.gif) no-repeat;
+	min-height: 255px;
+}
+
+#maincontent h2
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 70px;
+}
+
+#maincontent h2 a
+{
+	color: #e5df3d;
+	border-bottom: 1px dotted #e5df3d;
+}
+
+#maincontent a
+{
+	text-decoration: none;
+}
+
+.row
+{
+	height: 164px;
+	float: left;
+}
+
+.largerow
+{
+	height: 490px;
+	float: left;
+}
+
+#maincontent .numbers
+{
+	text-align: right;
+	clear: both;
+	margin-bottom: 36px;
+}
+
+.numbers img
+{
+	margin-right: 9px;
+}
+
+#maincontent h1
+{
+	font-weight: bold;
+	font-size: 36px;
+	color: #ade1ff;
+	margin-top: 44px;
+	margin-left: 5px;
+}
+
+#maincontent .dbutton
+{
+	margin-top: 44px;
+	height: 50px;
+}
+
+#maincontent .dbutton a
+{
+	background: url(images/button.png) repeat-x;
+	color: #173441;
+	font-size: 18px;
+	padding: 8px 23px;
+	border-bottom: none;
+	margin-left: 7px;
+	-moz-border-radius: 6px; 
+    -webkit-border-radius: 6px;
+	-moz-box-shadow: 0px 1px 0px #0a2e74; 
+	-webkit-box-shadow: 0px 1px 0px #0a2e74;
+	text-shadow: 0 1px 0 #f4f4f4;
+	line-height: 37px;
+}
+
+#maincontent .getnorm h1
+{
+	width: 68px;
+	float: left;
+}
+
+.getnorm img
+{
+	margin-top: 48px;
+}
+
+#maincontent textarea
+{
+	color: #e5df3d;
+	font: normal 14px Courier, Arial, Sans-Serif;
+	padding: 17px 25px;
+	line-height: 33px;
+	margin-top: 20px;
+	margin-left: 6px;
+	width: 406px;
+	height: 239px;
+	border-top: none;
+	border-right: solid 2px #16303b;
+	border-left: solid 2px #16303b;
+	border-bottom: solid 1px #84cdf9;
+	background: url(images/textarea.png) repeat-x;
+	resize: none;
+	scrollbar-base-color: #14262e;
+    scrollbar-3dlight-color: #14262e;
+	scrollbar-track-color: #14262e;
+    scrollbar-arrow-color:#fff;  
+    scrollbar-darkshadow-color:#14262e; 
+    scrollbar-face-color:#183643; 
+    scrollbar-highlight-color:#14262e; 
+    scrollbar-shadow-color: #14262e;
+}
+
+#maincontent .copybutton
+{
+	text-align: right;
+	margin-top: 3px;
+	padding-bottom: 51px;
+}
+
+#maincontent .copybutton a
+{
+	background: url(images/button.png) repeat-x;
+	color: #173441;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 20px 6px 20px;
+	margin-right: 4px;
+	border-bottom: none;
+	-moz-border-radius: 6px; 
+    -webkit-border-radius: 6px;
+	-moz-box-shadow: 0px 1px 0px #0a2e74; 
+	-webkit-box-shadow: 0px 1px 0px #0a2e74;
+	text-shadow: 0 1px 0 #f4f4f4;
+	line-height: 37px;
+}
+
+/***********************************
+****Footer
+***********************************/
+
+#footer
+{
+	background: url(images/footerdivider.gif) no-repeat;
+	min-height: 164px;
+}
+
+#footer p
+{
+	margin-top: 34px;
+	margin-left: 165px;
+	line-height: 33px;
+}
+
+#footer .right p
+{
+	text-align: right;
+	margin-left: 0px;
+}
+
+#footer img
+{
+	vertical-align: top;
+	width: 85px;
+	margin-right: 161px;
+	margin-left: 12px;
+}
