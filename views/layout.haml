@@ -1,0 +1,63 @@
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
+    %meta{ :name => "description", :content => "" }
+    %meta{ :name => "keywords", :content => "" }
+    %title
+      Norm
+    %link{ :href => "default.css", :rel => "Stylesheet", :type => "text/css" }
+    %link{ :href => "blueprint/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "blueprint/print.css", :rel => "stylesheet", :type => "text/css", :media => "print" }
+    /
+      [if lt IE 8]>
+      <link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection">
+      <![endif]
+  %body
+    #topborder
+      %a{:href=>'http://github.com/atheken/norm'}
+        %img{:class=>'github-ribbon',:src=>'http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png', :alt=>'Fork me on GitHub'}
+    #spotlight
+      .container
+        #maincontainer.span-24.last
+          #header
+            %a{ :href => "/" }
+              %img{ :src => "images/normlogo.png", :height => "92px", :alt => "NoRM", :width => "310px" }
+            %ul
+              %li
+                %a{ :href => "/quickstart" }
+                  Quick Start
+              %li
+                %a{ :href => "http://wiki.github.com/atheken/NoRM/" }
+                  Documentation
+              %li
+                %a{ :href => "http://groups.google.com/group/norm-mongodb" }
+                  Discuss
+              %li
+                %a{ :href => "/samples" }
+                  Samples
+              %li
+                %a{ :href => "http://github.com/atheken/norm" }
+                  Contribute
+          #maincontent
+            = yield
+          #footer.span-24.last
+            .span-12
+              %p
+                Copyright 2010 by Andrew Theken
+            .right.span-12.last
+              %p
+                Sponsored by
+                %a{ :href => "http://adzerk.com" }
+                  %img{ :src => "images/adzerklogo.png", :height => "29px", :alt => "adzerk", :width => "85px" }
+    %script{:type=>'text/javascript'}
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17007244-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+      })();
