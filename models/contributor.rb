@@ -5,7 +5,6 @@ class Contributor
 	def Contributor.all
 		retval = []
 		tree = YAML.parse(Net::HTTP.get_response(URI.parse('http://github.com/api/v2/yaml/repos/show/atheken/norm/contributors/')).body)
-		
 		for y in tree["contributors"].children
 			c = Contributor.new
 			

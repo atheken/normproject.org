@@ -1,8 +1,20 @@
-.content
-	- for c in @contribs
-		%li.contributor
-			- if c.gravatar_id != nil
-				%img{:src=>'http://www.gravatar.com/avatar/'+c.gravatar_id+'?s=50'}
-			.name=c.name
-			- if c.website != nil
-				%a{:href=>c.website}=c.website
+/.content
+/	- for c in @contribs
+/		%img.bordercontrib{:src=>'/images/boxLeft.png'}
+/		.contributor
+/			- if c.gravatar_id != nil
+/				%img{:src=>'http://www.gravatar.com/avatar/'+c.gravatar_id+'?s=50'}
+/			%span.name= c.name
+/			- if c.website != nil
+/				%a{:href=>c.website}=c.website
+/		%img.bordercontrib{:src=>'/images/boxRight.png'}
+%h2 
+	NoRM is a driver written by the community. We would be happy to have your help.
+
+%center
+	Please familiarize yourself with our 
+	%a{:href=>'http://wiki.github.com/atheken/NoRM/coding-guidelines'} coding style.
+	%br/
+	%br/
+	Then, fork the code on 
+	%a{:href=>'http://github.com/atheken/norm'} GitHub.

@@ -266,30 +266,37 @@ ul li
 
 /*more more more.*/
 
-li.contributor
-{	
-	list-style: none;
-	border: 1px solid rgb(78,152,233);
-	width: 45%;
-	margin: 5px;
-	padding: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-}
-li.contributor *
+.hilite
 {
-	clear: none;
+	color : rgb(255,245,69);
 }
 
-li.contributor img
+td.gravatar img
 {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
+	padding-top: 10px;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 }
 
-li.contributor .name
+.contributor
+{
+	width: 400px;	
+	clear:none;
+	background: url('/images/boxCenter.png') repeat-x;
+}
+img.bordercontrib
+{
+	clear:none;	
+}
+
+.contributor .name
 {
 	font-size: 2em;
 	font-weight: bolder;
 	color: rgb(23,38,49);
+}
+
+ui.numbered
+{
+	list-style: numbered;	
 }

@@ -1,5 +1,8 @@
 %h2
-	Three steps to building highly flexible and scalable applications with C# and MongoDB
+	Three steps to building highly flexible and scalable applications with 
+	%span.hilite C#
+	and 
+	%span.hilite MongoDB
 .row
 	.numbers.span-8
 		%img{ :src => "images/one.png", :height => "125px", :alt => "1", :width => "139px" }
@@ -40,7 +43,7 @@
 				  //insert into collection
 				  posts.Insert(new Post{ID = 1, 
 				  Title="Hello NoRM",
-				  Body="Reasons for loving MongoDB:…"});
+				  Body="Hello MongoDB..."});
 				
 				  //find a post by id
 				  var p1 = posts.FirstOrDefault(p=>p.ID == 1);
