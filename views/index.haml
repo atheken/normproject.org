@@ -30,20 +30,17 @@
 		%h1
 			Party Time!
 	.span-15.last
-		%textarea{ :rows => "9", :cols => "12" }
+		%textarea{ :rows => "9", :cols => "14" }
 			:preserve
 				using(var db = Mongo.Create("mongodb://localhost/BlogDB"))
 				{
-				  //create a db & collection
-				  //oh, right, nothing to do here.
-				
 				  //get LINQ access to your Posts
+				  //Mongo created the database and collection on the fly!
 				  var posts = db.GetCollection<Post>().AsQueryable();
 				
 				  //insert into collection
-				  posts.Insert(new Post{ID = 1, 
-				  Title="Hello NoRM",
-				  Body="Hello MongoDB..."});
+				  posts.Insert(new Post{ID = 1, Title="Hello NoRM"
+				             , Body="Hello MongoDB"});
 				
 				  //find a post by id
 				  var p1 = posts.FirstOrDefault(p=>p.ID == 1);
