@@ -13,6 +13,8 @@
       [if lt IE 8]>
       <link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection">
       <![endif]
+    <script type="text/javascript" src="jquery.js"></script>
+    %script jQuery(function(){ jQuery('.name').live('click',function(){jQuery(this).siblings().toggle(); }); });
   %body
     #topborder
       %a{:href=>'http://github.com/atheken/norm'}

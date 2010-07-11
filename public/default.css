@@ -94,6 +94,7 @@ ul li
 {
 	background: url(images/headerdivider.gif) no-repeat;
 	min-height: 255px;
+	padding-top: 20px;
 }
 
 #maincontent h2
@@ -299,4 +300,34 @@ img.bordercontrib
 ui.numbered
 {
 	list-style: numbered;	
+}
+
+.sampleBody
+{
+	display:none;
+}
+
+li.name
+{
+	list-style: none;
+	font-size: 1.5em;
+	padding: 5px;
+	background-color: #233845 ;
+}
+li.name:hover
+{
+	color: #e5df3d;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.gist
+{
+	padding-bottom: -5px;
+	border: 2px solid #233845;
+	background-color: #E4E4E4;
+}
+
+.sampleHead
+{
+	margin-bottom: 10px;
 }
