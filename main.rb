@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'yaml'
 require 'models/contributor.rb'
 
 set :haml, {:format => :html5 }
@@ -14,6 +15,7 @@ get '/documentation' do
 end
 
 get '/samples' do
+    @samples = YAML::load_file('./data/snippets.yaml')
 	haml :samples
 end
 

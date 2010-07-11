@@ -307,14 +307,21 @@ ui.numbered
 	display:none;
 }
 
+.sampleHead.active .sampleBody
+{
+	display: block;
+}
+
 li.name
 {
 	list-style: none;
 	font-size: 1.5em;
 	padding: 5px;
 	background-color: #233845 ;
+	border-radius: 5px;
+	cursor: pointer;
 }
-li.name:hover
+.sampleHead.active li.name
 {
 	color: #e5df3d;
 	cursor: pointer;
@@ -322,9 +329,9 @@ li.name:hover
 }
 .gist
 {
-	padding-bottom: -5px;
 	border: 2px solid #233845;
 	background-color: #E4E4E4;
+	
 }
 
 .sampleHead

@@ -1,0 +1,9 @@
+-
+    name: "Use LINQ to access MongoDB"
+    gist: "http://gist.github.com/471224.js?file=LINQ-to-MongoDB.cs"
+-
+    name: "Create a compound index"
+    gist: "http://gist.github.com/471224.js?file=CreateCompoundIndex.cs"
+-
+    name: "Rob Conery's Mongo Session"
+    gist: "http://gist.github.com/444817.js"

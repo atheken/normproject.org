@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection">
       <![endif]
     <script type="text/javascript" src="jquery.js"></script>
-    %script jQuery(function(){ jQuery('.name').live('click',function(){jQuery(this).siblings().toggle(); }); });
+    %script jQuery(function(){ jQuery('.sampleHead').live('click',function(){jQuery(this).addClass('active', 2000); jQuery(this).siblings('.sampleHead').removeClass('active', 2000); }); });
   %body
     #topborder
       %a{:href=>'http://github.com/atheken/norm'}

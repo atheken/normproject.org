@@ -1,13 +1,8 @@
 .centered
-    .sampleHead
-        %li.name Use LINQ to query MongoDB
-        .sampleBody
-            <script src="http://gist.github.com/471224.js?file=LINQ-to-MongoDB.cs"></script>
-    .sampleHead
-        %li.name Create a compound index.
-        .sampleBody
-            <script src="http://gist.github.com/471585.js?file=CreateCompoundIndex.cs"></script>
-    .sampleHead
-        %li.name Rob Conery's MongoSession
-        .sampleBody
-            <script src="http://gist.github.com/444817.js"></script>    
+    - i = 0
+    - for s in @samples
+        - i += 1
+        .sampleHead{:class=> i == 1 ? 'active' : ''}
+            %li.name=s["name"]
+            .sampleBody
+                %script{:src => s["gist"], :type=>"text/javascript"}
