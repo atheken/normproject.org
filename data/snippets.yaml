@@ -2,11 +2,11 @@
     name: "Use LINQ to access MongoDB"
     gist: "http://gist.github.com/471224.js?file=LINQ-to-MongoDB.cs"
 -
+    name: "A set of snippets for common tasks authored by: Anirudh Sanjeev"
+    gist: "http://gist.github.com/485375.js"
+-
     name: "Create a compound index"
     gist: "http://gist.github.com/471585.js?file=CreateCompoundIndex.cs"
 -
     name: "Rob Conery's Mongo Session"
     gist: "http://gist.github.com/444817.js"
--
-    name: "A full set of interations from Anirudh Sanjeev"
-    gist: "http://gist.github.com/485375.js"
