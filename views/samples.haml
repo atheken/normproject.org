@@ -3,6 +3,8 @@
     - for s in @samples
         - i += 1
         .sampleHead{:class=> i == 1 ? 'active' : ''}
-            %li.name=s["name"]
+            %li.name
+                .head=s["name"]
+                %a.downloadLink{:href=> "http://gist.github.com/gists/"+s["gist"].to_s()+"/download"} Download
             .sampleBody
-                %script{:src => s["gist"], :type=>"text/javascript"}
+                %script{:src => "http://gist.github.com/"+s["gist"].to_s()+".js", :type=>"text/javascript"}

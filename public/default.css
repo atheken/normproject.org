@@ -317,11 +317,20 @@ li.name
 	list-style: none;
 	font-size: 1.5em;
 	padding: 5px;
-	background-color: #233845 ;
+	background-color: #233845;
 	border-radius: 5px;
 	cursor: pointer;
+	height: 1.25em;
 }
-.sampleHead.active li.name
+
+.sampleHead li.name .head
+{
+	clear:none;
+	float:left;
+	width: auto;
+}
+
+.sampleHead.active li.name .head
 {
 	color: #e5df3d;
 	cursor: pointer;
@@ -337,4 +346,20 @@ li.name
 .sampleHead
 {
 	margin-bottom: 10px;
+}
+
+a.downloadLink
+{
+	text-decoration: none;
+	color: #white;
+	font-size: .6em;
+	clear: none;
+	float:right;
+}
+
+a.downloadLink:hover
+{
+	text-decoration: underline;
+	color: #e5df3d;
+	font-size: .6em;
 }
